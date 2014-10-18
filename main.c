@@ -1,4 +1,5 @@
 ﻿//综合实例3
+//dev
 #include<stdio.h>
 #include<stdlib.h>
 #define M 5
