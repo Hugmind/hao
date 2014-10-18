@@ -1,3 +1,4 @@
+//вш╨ой╣юЩ3
 #include<stdio.h>
 #include<stdlib.h>
 #define M 5
