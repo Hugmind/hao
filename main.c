@@ -1,4 +1,4 @@
-//×ÛºÏÊµÀı3
+ï»¿//ç»¼åˆå®ä¾‹3
 #include<stdio.h>
 #include<stdlib.h>
 #define M 5
@@ -26,12 +26,12 @@ int main ()
     {
 
         printf("\n");
-        printf("1.ÊäÈë³É¼¨\n");
-        printf("2.Êä³öÑ§ÉúÆ½¾ù·Ö\n");
-        printf("3.Êä³öÑ§¿ÆÆ½¾ù·Ö\n");
-        printf("4.Êä³ö×î¸ß·Ö\n");
-        printf("5.Êä³ö·½²î\n");
-        printf("6.ÍË³ö\n");
+        printf("1.è¾“å…¥æˆç»©\n");
+        printf("2.è¾“å‡ºå­¦ç”Ÿå¹³å‡åˆ†\n");
+        printf("3.è¾“å‡ºå­¦ç§‘å¹³å‡åˆ†\n");
+        printf("4.è¾“å‡ºæœ€é«˜åˆ†\n");
+        printf("5.è¾“å‡ºæ–¹å·®\n");
+        printf("6.é€€å‡º\n");
 
         scanf("%d",&select);
 
@@ -46,7 +46,7 @@ int main ()
                    else
                    {
                        for(i=0;i<N;i++)
-                            printf("NO %d µÄÑ§ÉúµÄÆ½¾ù·ÖÊÇ%f \n",i+1,a_stu[i]/M);
+                            printf("NO %d çš„å­¦ç”Ÿçš„å¹³å‡åˆ†æ˜¯%f \n",i+1,a_stu[i]/M);
                        break;
                        }
             case 3:
@@ -56,7 +56,7 @@ int main ()
                     {
 
                         for(j=0;j<M;j++)
-                            printf("¿Î³Ì %d µÄÆ½¾ù·ÖÊÇ %f \n",j+1,a_cor[j]/N);
+                            printf("è¯¾ç¨‹ %d çš„å¹³å‡åˆ†æ˜¯ %f \n",j+1,a_cor[j]/N);
                         break;
                     }
             case 4:
@@ -96,7 +96,7 @@ int judge()
 {
     if(score[0][0]==-1)
            {
-               printf("Î´ÊäÈë³É¼¨,ÇëÖØĞÂÊäÈë");
+               printf("æœªè¾“å…¥æˆç»©,è¯·é‡æ–°è¾“å…¥");
                return -1;
            }
     else
@@ -108,7 +108,7 @@ void input()
     int i,j;
     for(i=0;i<N;i++)
      {
-       printf("ÇëÊäÈëµÚ%d¸öÑ§ÉúµÄ5¸ö³É¼¨: \n",i+1);
+       printf("è¯·è¾“å…¥ç¬¬%dä¸ªå­¦ç”Ÿçš„5ä¸ªæˆç»©: \n",i+1);
        for(j=0;j<M;j++)
            scanf("%f",&score[i][j]);
         printf("\n");
@@ -148,7 +148,7 @@ void highest()
               y=j;
           }
   }
-  printf("×î¸ß·ÖÊÇµÚ%d Í¬Ñ§µÄµÚ%d¿ÎµÄ%f³É¼¨ \n",x,y,score[x][y]);
+  printf("æœ€é«˜åˆ†æ˜¯ç¬¬%d åŒå­¦çš„ç¬¬%dè¯¾çš„%fæˆç»© \n",x,y,score[x][y]);
 }
 float s_diff()
 {
@@ -166,7 +166,7 @@ float s_diff()
 void print()
 {
     int i,j;ave_stu();ave_cor();
-    printf("¿Î³ÌºÅ   ¿Î³Ì1   ¿Î³Ì2   ¿Î³Ì3   ¿Î³Ì4   ¿Î³Ì5   Æ½¾ù·Ö    \n");
+    printf("è¯¾ç¨‹å·   è¯¾ç¨‹1   è¯¾ç¨‹2   è¯¾ç¨‹3   è¯¾ç¨‹4   è¯¾ç¨‹5   å¹³å‡åˆ†    \n");
     for(i=0;i<N;i++)
         {
             printf("NO%d      ",i+1);
@@ -175,7 +175,7 @@ void print()
 
             printf("%.1f  \n",a_stu[i]/N);
         }
-    printf("¿ÎÆ½¾ù·Ö ");
+    printf("è¯¾å¹³å‡åˆ† ");
     for(j=0;j<M;j++)
     {
 
